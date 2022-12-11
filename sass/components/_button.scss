@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+button {
+  background: linear-gradient(90deg, $lime-green 0%, $bright-cyan 100%);
+  border: none;
+  border-radius: 5rem;
+  padding: 0.8rem 2rem;
+  color: $white;
+  font-size: 0.88rem;
+  margin: 0;
+  @include on-event {
+    filter: brightness(1.15);
+    transition: $transition;
+  }
+}

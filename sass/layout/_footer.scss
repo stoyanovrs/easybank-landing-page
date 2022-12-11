@@ -1,0 +1,90 @@
+@use "../abstracts/" as *;
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+footer {
+  padding: 4rem 0;
+  background: $dark-blue;
+  @include respond-to("medium") {
+    .footer-flex {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .brand {
+      flex: 0 1;
+    }
+    .footer-links {
+      flex: 2 1;
+      display: flex;
+      ul {
+        text-align: left;
+        margin-left: 7.8rem;
+      }
+    }
+    .copy {
+      flex: 1 1;
+      text-align: right;
+    }
+    .social-icons {
+      margin-top: 2rem;
+    }
+    .attribution {
+      text-align: left;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      a {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  margin-top: 1rem;
+  svg {
+    &:hover {
+      path {
+        fill: $lime-green;
+      }
+    }
+  }
+}
+.footer-links {
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    a {
+      color: $light-grayish-blue;
+      font-size: 0.8rem;
+      &:hover {
+        color: $lime-green;
+      }
+    }
+  }
+}
+.copy {
+  text-align: center;
+  .copy-text {
+    margin-top: 2rem;
+  }
+}
+.attribution {
+  text-align: center;
+  a {
+    color: $white;
+    text-decoration: none;
+
+    @include on-event {
+      color: $lime-green;
+      transition: $transition;
+    }
+  }
+}
