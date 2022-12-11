@@ -891,6 +891,10 @@ button:hover, button:active, button:focus, button:focus-within {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.article h3 {
+  font-size: 1.05rem;
+  margin-top: 0;
+}
 
 .meta {
   display: -webkit-box;
