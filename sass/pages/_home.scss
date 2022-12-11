@@ -137,7 +137,15 @@
   }
   h3 {
     font-size: 1.05rem;
-    margin-top: 0;
+    margin: 0;
+  }
+  a {
+    h3 {
+      @include on-event {
+        color: $lime-green;
+        transition: $transition;
+      }
+    }
   }
 }
 .meta {

@@ -893,7 +893,12 @@ button:hover, button:active, button:focus, button:focus-within {
 }
 .article h3 {
   font-size: 1.05rem;
-  margin-top: 0;
+  margin: 0;
+}
+.article a h3:hover, .article a h3:active, .article a h3:focus, .article a h3:focus-within {
+  color: hsl(136deg, 65%, 51%);
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
 }
 
 .meta {
